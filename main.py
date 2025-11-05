@@ -1,5 +1,6 @@
+# operator precedence
+print(20 - 3 * 4) # 8
+print((20 - 3) + 2 ** 2) # 21
 
-
-# math functions
-print(round(3.9))
-print(abs(-20))
+# ()
+# ** power of
