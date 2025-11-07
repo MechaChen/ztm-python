@@ -1,11 +1,16 @@
-# augmented assignment operator
-some_value = 5
+type("hi hello there 24!")
+username = 'userpcoder'
+password = 'supersecret'
+long_string = '''
+WOW
+0 0
+---
+'''
 
-some_value += 2
-print(some_value)
+print(long_string)
 
-some_value -= 2
-print(some_value)
 
-some_value *= 2
-print(some_value)
+first_name = 'Benson'
+last_name = 'Chen'
+full_name = first_name + ' ' + last_name
+print(full_name)
