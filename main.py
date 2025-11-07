@@ -1,6 +1,11 @@
-iq = 100
-user_age = iq / 5
+# augmented assignment operator
+some_value = 5
 
-# iq / 5 : expression
-# user_age = iq / 5 : statement
-# iq = 100 : 
+some_value += 2
+print(some_value)
+
+some_value -= 2
+print(some_value)
+
+some_value *= 2
+print(some_value)
