@@ -1,6 +1,6 @@
-# operator precedence
-print(20 - 3 * 4) # 8
-print((20 - 3) + 2 ** 2) # 21
+iq = 100
+user_age = iq / 5
 
-# ()
-# ** power of
+# iq / 5 : expression
+# user_age = iq / 5 : statement
+# iq = 100 : 

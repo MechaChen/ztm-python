@@ -1,1 +1,15 @@
 # ztm-python
+
+## Python Basics
+
+Expression vs Statements
+
+- **Assignment**: the action to assign a value to a variable (e.g., `iq = 100`)
+- **Expression**: a code fragment that evaluates to a value (e.g., `iq / 5`, `2 + 3`, `len("hello")`)
+- **Statement**: a complete instruction that performs an action (e.g., assignment statement, expression statement, if statement)
+
+**Relationships:**
+
+- Assignment is a type of Statement (assignment statement)
+- An Expression can be a Statement when used alone (expression statement)
+- The right side of an Assignment is usually an Expression
