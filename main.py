@@ -1,7 +1,9 @@
-# Type Conversion
+# Escape Sequences
+weather = 'It\'s \"kind of\" sunny'
+print(weather)
 
-a = str(100)
-print(type(a))
+weather = "It\\'s \"kind of\" sunny"
+print(weather)
 
-b = int(a)
-print(type(b))
+weather = "\t It\'s \"kind of\" sunny \n hope you have a good day!"
+print(weather)
