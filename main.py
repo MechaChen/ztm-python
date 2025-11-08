@@ -1,9 +1,14 @@
-# Escape Sequences
-weather = 'It\'s \"kind of\" sunny'
-print(weather)
+# formatted strings
 
-weather = "It\\'s \"kind of\" sunny"
-print(weather)
+name = 'Benson'
+age = 32
 
-weather = "\t It\'s \"kind of\" sunny \n hope you have a good day!"
-print(weather)
+print(f'Hi {name}. You are {age} years old.')
+
+print('Hi {}. You are {} years old.'.format(name, age))
+
+print('Hi {1}. You are {0} years old.'.format(name, age))
+
+print('Hi {new_name}. You are {age} years old.'.format(
+  new_name="Benson Chen", age=31
+))
