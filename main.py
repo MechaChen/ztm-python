@@ -1,12 +1,8 @@
-quote = 'to be or not to be'
+# booleans
+name = 'Benson'
+is_cool = False
 
-print(quote.upper()) # TO BE OR NOT TO BE
-print(quote.capitalize()) # To be or not to be
+is_cool = True
 
-print(quote.find('be')) # 3
-print(quote.replace('be', 'me'))
-
-print(quote) # still "to be or not to be" because strings are immutable
-
-quote2 = quote.replace('be', 'me')
-print(quote2) # "to me or not to me"
+print(bool(0))
+print(bool(1))
