@@ -1,10 +1,10 @@
-birth_year = input('What year were you born?')
+# Password Checker
+username = input('What is your username? ')
+password = input('What is your password? ')
 
-age = 2025 - int(birth_year)
-print(f'You age is: {age}')
+password_length = len(password)
+hidden_password = '*' * password_length
 
-age = 2025 - float(birth_year)
-print(f'You age is: {age}')
-
-age = 2025 - bool(birth_year)
-print(f'You age is: {age}')
+print(f"""
+{username}, your password {hidden_password} is {password_length} letters long
+""")
