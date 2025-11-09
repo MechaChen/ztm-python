@@ -1,20 +1,12 @@
-# Immutability
+quote = 'to be or not to be'
 
-selfish_1 = '01234567'
-selfish_1 = 100
+print(quote.upper()) # TO BE OR NOT TO BE
+print(quote.capitalize()) # To be or not to be
 
-print(selfish_1)
+print(quote.find('be')) # 3
+print(quote.replace('be', 'me'))
 
+print(quote) # still "to be or not to be" because strings are immutable
 
-# String is immutable, so we can't change the value of the string
-selfish_2 = '01234567'
-selfish_2[0] = '8'
-
-print(selfish_2) # TypeError: 'str' object does not support item assignment
-
-
-# But we can change the value of the variable
-selfish_3 = '01234567'
-selfish_3 += '8'
-
-print(selfish_3)
+quote2 = quote.replace('be', 'me')
+print(quote2) # "to me or not to me"
