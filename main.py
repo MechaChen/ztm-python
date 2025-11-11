@@ -1,8 +1,30 @@
-# Matrix
-matrix = [
-  [1, 2, 3],
-  [2, 4, 6],
-  [7, 8, 9],
-]
+basket = [1,2,3,4,5]
 
-print(matrix[0][1])
+# adding
+new_list = basket.append(100)
+print(basket)
+print(new_list) # None
+
+basket.insert(4, 200)
+print(basket)
+
+basket.extend([101, 102])
+print(basket)
+
+# removing
+
+## pop(): remove last, or by index
+basket.pop()
+print(basket)
+
+popped = basket.pop(0)
+print(popped)
+print(basket)
+
+## remove(): remove by value
+basket.remove(200)
+print(basket)
+
+## clear(): remove all items
+basket.clear()
+print(basket)
