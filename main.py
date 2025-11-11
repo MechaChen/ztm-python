@@ -1,30 +1,15 @@
-basket = [1,2,3,4,5]
+basket = ['a', 'b', 'c', 'd', 'e']
 
-# adding
-new_list = basket.append(100)
-print(basket)
-print(new_list) # None
+# index()
+## 0th parameter is the value to find
+## 1st parameter is the start index of the finding zone
+## 2nd parameter is the end index of the finding zone
 
-basket.insert(4, 200)
-print(basket)
+print(basket.index('d', 0, 4))
 
-basket.extend([101, 102])
-print(basket)
+print('x' in basket)
 
-# removing
+# work in string as well
+print('i' in 'hi my name is ion')
 
-## pop(): remove last, or by index
-basket.pop()
-print(basket)
-
-popped = basket.pop(0)
-print(popped)
-print(basket)
-
-## remove(): remove by value
-basket.remove(200)
-print(basket)
-
-## clear(): remove all items
-basket.clear()
-print(basket)
+print(basket.count('d'))
