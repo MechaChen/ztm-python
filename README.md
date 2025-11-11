@@ -19,3 +19,9 @@
 ### String COncatenation
 
 - `<String>` + `<Int>` will not be a String, will have TypeError, not same as JavaScript
+
+<br />
+
+### List Slicing
+
+- Lists are mutable
