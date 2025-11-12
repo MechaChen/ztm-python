@@ -1,6 +1,8 @@
-# print(list(range(1, 100)))
-# print(list(range(100)))
+# list unpacking
+a,b,c, *other, d = [1,2,3,4,5,6,7,8,9]
 
-new_sentence = ' '.join(['hi', 'my', 'name', 'is', 'Benson'])
-
-print(new_sentence)
+print(a)
+print(b)
+print(c)
+print(other) # [4, 5, 6, 7, 8]
+print(d)
