@@ -1,9 +1,6 @@
-basket = ['a', 'x', 'b', 'c', 'd', 'e']
-basket.sort() # mutate the original list
+# print(list(range(1, 100)))
+# print(list(range(100)))
 
-print(basket)
-print(sorted(basket)) # create a sorted list
+new_sentence = ' '.join(['hi', 'my', 'name', 'is', 'Benson'])
 
-new_basket = basket.copy()
-new_basket.reverse()
-print(new_basket)
+print(new_sentence)
