@@ -25,3 +25,9 @@
 ### List Slicing
 
 - Lists are mutable
+
+<br />
+
+### Dictionary Keys
+
+- Dictionary keys must be **hashable** (immutable types like int, str, tuple, frozenset). Immutable objects have stable hash values that don't change, making them reliable keys.

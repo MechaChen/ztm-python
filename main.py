@@ -1,22 +1,14 @@
-# Dictionary
+# Dictionary Keys
 dictionary = {
-  'a': [1, 2, 3],
-  'b': 'hello',
-  'x': True,
+  123: [1, 2, 3],
+  True: 'hello',
+  '[100]': True,
 }
 
-my_list = [
-  {
-    'a': [1, 2, 3],
-    'b': 'hello',
-    'x': True,
-  },
-  {
-    'a': [4, 5, 6],
-    'b': 'hello',
-    'x': True,
-  }
-]
+another_dictionary = {
+  '123': [1, 2, 3],
+  '123': 'hello',
+}
 
-print(dictionary['a'])
-print(my_list[0]['a'][2])
+print(dictionary['[100]'])
+print(another_dictionary['123'])
