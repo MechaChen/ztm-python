@@ -1,14 +1,13 @@
-# Dictionary Keys
-dictionary = {
-  123: [1, 2, 3],
-  True: 'hello',
-  '[100]': True,
+# Dictionary Methods
+user = {
+  'basket': [1, 2, 3],
+  'greet': 'hello',
 }
 
-another_dictionary = {
-  '123': [1, 2, 3],
-  '123': 'hello',
-}
+# print(user['age']) # will throw KeyError
+print(user.get('age')) # will just return None, not throw KeyError
+print(user.get('age', 55)) # will return 55 if 'age' is not in the dictionary
 
-print(dictionary['[100]'])
-print(another_dictionary['123'])
+# not the common way to create a dictionary
+user2 = dict(name='Benson')
+print(user2)
