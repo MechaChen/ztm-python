@@ -1,13 +1,23 @@
-# Dictionary Methods
 user = {
   'basket': [1, 2, 3],
   'greet': 'hello',
+  'age': 20,
 }
 
-# print(user['age']) # will throw KeyError
-print(user.get('age')) # will just return None, not throw KeyError
-print(user.get('age', 55)) # will return 55 if 'age' is not in the dictionary
+print('basket' in user)
+print('hello' in user.keys())
+print('hello' in user.values())
+print(user.items())
 
-# not the common way to create a dictionary
-user2 = dict(name='Benson')
+print(user.pop('age'))
+print(user)
+
+user.update({ 'greet': 'hi' })
+print(user)
+
+user2 = user.copy()
+
+user.clear() # remove all items from the dictionary
+print(user)
+
 print(user2)
