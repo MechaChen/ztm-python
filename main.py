@@ -1,23 +1,17 @@
+# Tuple
+# like immutable list
+
+my_tuple = (1,2,3,4,5)
+print(my_tuple[1])
+print(5 in my_tuple)
+
+# my_tuple[1] = 1 # will throw TypeError
+
 user = {
-  'basket': [1, 2, 3],
+  (1,2): [1,2,3],
   'greet': 'hello',
   'age': 20,
 }
 
-print('basket' in user)
-print('hello' in user.keys())
-print('hello' in user.values())
 print(user.items())
-
-print(user.pop('age'))
-print(user)
-
-user.update({ 'greet': 'hi' })
-print(user)
-
-user2 = user.copy()
-
-user.clear() # remove all items from the dictionary
-print(user)
-
-print(user2)
+print(user[(1,2)])
