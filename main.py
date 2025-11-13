@@ -1,17 +1,16 @@
-# Tuple
-# like immutable list
+# Sets
+# unordered collection of unique objects
 
-my_tuple = (1,2,3,4,5)
-print(my_tuple[1])
-print(5 in my_tuple)
+my_set = {1,2,3,4,5,5}
+print(my_set)
 
-# my_tuple[1] = 1 # will throw TypeError
+my_list = [1,2,3,4,5,5]
+print(set(my_list))
 
-user = {
-  (1,2): [1,2,3],
-  'greet': 'hello',
-  'age': 20,
-}
+print(len(my_set))
 
-print(user.items())
-print(user[(1,2)])
+new_set = my_set.copy()
+my_set.clear()
+
+print(my_set)
+print(new_set)
