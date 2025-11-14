@@ -1,25 +1,18 @@
-# Sets 2
+# Conditional Logic
 
-my_set = {1,2,3,4,5}
-your_set = {4,5,6,7,8,9,10}
+is_old = False
+is_licenced = True
 
-print(my_set.difference(your_set))
-print(my_set)
+if is_old:
+  print('you are old enough to drive!')
+elif is_licenced:
+  print('you can drive now!')
+else:
+  print('you are not of age!')
 
-print(my_set.discard(5))
-print(my_set)
+if is_old and is_licenced:
+  print('you are old enough to drive, and you have a licence!')
+else:
+  print('you are not of age!')
 
-print(my_set.difference_update(your_set))
-print(my_set)
-
-my_set = {1,2,3,4,5}
-print(my_set.intersection(your_set))
-
-print(my_set.isdisjoint(your_set))
-
-print(my_set.union(your_set))
-print(my_set | your_set)
-
-my_set = {4,5}
-print(my_set.issubset(your_set))
-print(your_set.issuperset(my_set))
+print('okok')
