@@ -1,6 +1,9 @@
-# Ternary Operator
+# Short Circuiting
 
 is_friend = True
-can_message = "message allowed" if is_friend else "message not allowed"
+is_user = True
 
-print(can_message)
+# 'or' is more performant than 'and', since it would only check 1st if true, then stop
+
+if is_friend or is_user:
+  print('best friend forever')
