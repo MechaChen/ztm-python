@@ -1,9 +1,18 @@
-# Short Circuiting
+print('a' > 'A')
 
-is_friend = True
-is_user = True
+# Short circuiting
+print(1 < 2 > 3 < 4)
 
-# 'or' is more performant than 'and', since it would only check 1st if true, then stop
+x = 2
 
-if is_friend or is_user:
-  print('best friend forever')
+print(1 < x < 3)
+
+print(1 >= 0)
+print(1 <= 0)
+
+print(0 != 0)
+
+print(not(True))
+print(not(False))
+print(not True)
+print(not False)
