@@ -1,18 +1,14 @@
-print('a' > 'A')
+is_magician = False
+is_expert = False
 
-# Short circuiting
-print(1 < 2 > 3 < 4)
+# chek if magician AND expert: "you are a master magician"
+if is_magician and is_expert:
+    print('you are a master magician')
 
-x = 2
+# check if magician but not expert: "at least you're getting there"
+elif is_magician and not is_expert:
+    print("at least you're getting there")
 
-print(1 < x < 3)
-
-print(1 >= 0)
-print(1 <= 0)
-
-print(0 != 0)
-
-print(not(True))
-print(not(False))
-print(not True)
-print(not False)
+# if you're not a magician: "You need magic powers"
+elif not is_magician:
+    print('You need magic powers')
