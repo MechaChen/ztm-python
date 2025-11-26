@@ -1,9 +1,13 @@
-# counter
-my_list = [1,2,3,4,5,6,7,8,9,10]
+print(range(0, 100))
 
-total = 0
-for item in my_list:
-  total += item
-  print(item)
+for number in range(0, 100):
+  print(number)
 
-print(total)
+for _ in range(0, 10, 2):
+  print(_)
+
+for _ in range(10, 0, -1):
+  print(_)
+
+for _ in range(2):
+  print(list(range(10)))
