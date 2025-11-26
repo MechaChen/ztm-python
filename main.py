@@ -1,17 +1,15 @@
-# Value Equality: Check if two objects have the same value after conversion
-print(True == 1)
-print('1' == 1)
-print([] == 1)
-print(10 == 10.00)
-print([] == []) # for Python, == for array and object will be deepEqual
+for item in 'Zero to Mastery':
+  print(item)
 
-# Identity Equality: Check if two objects are the same object in memory
-print(True is 1)
-print('1' is 1)
-print([] is 1)
-print(10 is 10.00)
-print([] is [])
+for item in [1,2,3,4,5]:
+  print(item)
 
-a = [1,2,3]
-b = [1,2,3]
-print(a is b)
+for item in {1,2,3,4,5}:
+  print(item)
+
+for item in (1,2,3,4,5):
+  print(item)
+
+for item in (1,2,3,4,5):
+  for x in ['a', 'b', 'c']:
+    print(item, x)
