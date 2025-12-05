@@ -38,3 +38,7 @@
 ### `enumerate()`
 
 - `enumerate()` can generate tuple of list, and tuple's 0th element is index
+
+### `while`
+
+- if there is a `break`, the statement in `else` won't execute
