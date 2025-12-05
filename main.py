@@ -1,13 +1,17 @@
-print(range(0, 100))
+# enumerate() will give us the index and the enumerated object
+from re import S
 
-for number in range(0, 100):
-  print(number)
 
-for _ in range(0, 10, 2):
-  print(_)
+for i, char in enumerate('Helllooo'):
+  print(i, char)
 
-for _ in range(10, 0, -1):
-  print(_)
+print('--------------------------------')
 
-for _ in range(2):
-  print(list(range(10)))
+for i, char in enumerate(('a', 'b', 'c')):
+  print(i, char)
+
+print('--------------------------------')
+
+for i, char in enumerate(range(100)):
+  if char == 50:
+    print(f'index of 50 is: {i}')

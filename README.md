@@ -31,3 +31,10 @@
 ### Dictionary Keys
 
 - Dictionary keys must be **hashable** (immutable types like int, str, tuple, frozenset). Immutable objects have stable hash values that don't change, making them reliable keys.
+
+
+## Python Basics 2
+
+### `enumerate()`
+
+- `enumerate()` can generate tuple of list, and tuple's 0th element is index
