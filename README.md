@@ -42,3 +42,7 @@
 ### `while`
 
 - if there is a `break`, the statement in `else` won't execute
+
+### `break`, `continue`, `pass`
+
+- if nothing here, it will throw error, therefore, we can use `pass` to do nothing without throwing error

@@ -1,14 +1,15 @@
-my_list = [1, 2, 3]
-
+my_list = [1,2,3]
 for item in my_list:
+  continue
   print(item)
 
 i = 0
 while i < len(my_list):
-  print(my_list[i])
   i += 1
+  continue
+  print(my_list[i])
 
-while True:
-  response = input('say something: ')
-  if response == 'bye':
-    break
+for item in my_list:
+  # if nothing here, it will throw error
+  # therefore, we can use `pass` to do nothing without throwing error
+  pass
