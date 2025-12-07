@@ -50,3 +50,10 @@
 ### Our First GUI
 
 - `print` will add `\n` so that next print will go next line, we can change it by passing 2nd parameter `end=''`
+
+### Developer Fundamental IV
+
+- clean
+- Readability
+- predictability
+- DRY
