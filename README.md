@@ -46,3 +46,7 @@
 ### `break`, `continue`, `pass`
 
 - if nothing here, it will throw error, therefore, we can use `pass` to do nothing without throwing error
+
+### Our First GUI
+
+- `print` will add `\n` so that next print will go next line, we can change it by passing 2nd parameter `end=''`

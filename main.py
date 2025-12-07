@@ -1,15 +1,18 @@
-my_list = [1,2,3]
-for item in my_list:
-  continue
-  print(item)
+# Exercise!
+picture = [
+  [0,0,0,1,0,0,0],
+  [0,0,1,1,1,0,0],
+  [0,1,1,1,1,1,0],
+  [1,1,1,1,1,1,1],
+  [0,0,0,1,0,0,0],
+  [0,0,0,1,0,0,0]
+]
 
-i = 0
-while i < len(my_list):
-  i += 1
-  continue
-  print(my_list[i])
-
-for item in my_list:
-  # if nothing here, it will throw error
-  # therefore, we can use `pass` to do nothing without throwing error
-  pass
+# do not hint me
+for row in picture:
+  for pixel in row:
+    if pixel == 1:
+      print('*', end='')
+    else:
+      print(' ', end='')
+  print('\n', end='')
