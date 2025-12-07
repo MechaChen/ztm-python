@@ -1,23 +1,25 @@
-# Exercise: Check for duplicates in the list
-some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+def say_hello():
+  print('hello')
 
-set = set()
-duplicates = []
+say_hello()
 
-for item in some_list:
-  if item in set:
-    duplicates.append(item)
-  else:
-    set.add(item)
+def show_tree():
+  tree = [
+    [0,0,0,1,0,0,0],
+    [0,0,1,1,1,0,0],
+    [0,1,1,1,1,1,0],
+    [1,1,1,1,1,1,1],
+    [0,0,0,1,0,0,0],
+    [0,0,0,1,0,0,0]
+  ]
 
-print(duplicates)
+  for row in tree:
+    for pixel in row:
+      if pixel:
+        print('*', end='')
+      else:
+        print(' ', end='')
+    print('')
 
-
-duplicates_two = []
-
-for value in some_list:
-  if some_list.count(value) > 1:
-    if value not in duplicates_two:
-      duplicates_two.append(value)
-
-print(duplicates_two)
+print(show_tree)
+show_tree()
