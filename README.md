@@ -57,3 +57,8 @@
 - Readability
 - predictability
 - DRY
+
+### Parameters & Arguments
+
+- Parameters: the variables defiend in the function definition
+- Arguments: the actual values passed to the function

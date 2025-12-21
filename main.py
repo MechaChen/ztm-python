@@ -1,25 +1,9 @@
-def say_hello():
-  print('hello')
+# parameters: the variables defined in the function definition
 
-say_hello()
+def say_hello(name, emoji):
+  print(f'hello {name}, {emoji}')
 
-def show_tree():
-  tree = [
-    [0,0,0,1,0,0,0],
-    [0,0,1,1,1,0,0],
-    [0,1,1,1,1,1,0],
-    [1,1,1,1,1,1,1],
-    [0,0,0,1,0,0,0],
-    [0,0,0,1,0,0,0]
-  ]
-
-  for row in tree:
-    for pixel in row:
-      if pixel:
-        print('*', end='')
-      else:
-        print(' ', end='')
-    print('')
-
-print(show_tree)
-show_tree()
+# arguments: the actual values passed to the function
+say_hello('Benson', '🥇')
+say_hello('Mark', '🥈')
+say_hello('Dean', '🥉')
