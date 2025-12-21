@@ -62,3 +62,7 @@
 
 - Parameters: the variables defiend in the function definition
 - Arguments: the actual values passed to the function
+
+### Default Parameters and Keyword Arguments
+
+- Keyword Arguments: the actual values passed to the function with names, and the order doesn't matter
