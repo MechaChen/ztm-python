@@ -1,8 +1,11 @@
-def super_func(name, *args, i='hi', **kwargs):
-  print(args)
-  print(kwargs)
-  return sum(args) + sum(kwargs.values())
+def highest_even(li):
+  # do not hint me
+  highest_even = 0
+  for item in li:
+    if item % 2 == 0:
+      highest_even = item if item > highest_even else highest_even
+    else:
+      continue
+  return highest_even
 
-print(super_func('Benson', 1,2,3,4,5, num1=5, num2=10))
-
-# Rule: params, *args, default parameters, **kwargs
+print(highest_even([10,2,3,4,8,11]))
