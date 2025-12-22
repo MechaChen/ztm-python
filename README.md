@@ -71,3 +71,9 @@
 
 - `help()`: print the entire function detail
 - `string.__doc__`: return the docstrings of a function
+
+### `*args` and `**kwargs`
+
+- `*args`: all remaining positional arguments, where `args` is a tuple
+- `**kwargs`: all keyword arguments, where `kwargs` is a dictionary
+- function parameters order: positional params, *args, default parameters, **kwargs
