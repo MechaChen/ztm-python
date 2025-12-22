@@ -66,3 +66,8 @@
 ### Default Parameters and Keyword Arguments
 
 - Keyword Arguments: the actual values passed to the function with names, and the order doesn't matter
+
+### Docstrings: the note inside the functions
+
+- `help()`: print the entire function detail
+- `string.__doc__`: return the docstrings of a function

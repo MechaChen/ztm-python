@@ -1,6 +1,10 @@
-# Functions
-list()
-print()
+# Docstrings: the note inside the function
+def test(a):
+  '''
+  Info: this function tests and prints param a
+  '''
+  print(a)
 
-# Methods: a function owned by an object
-print('hello'.capitalize())
+test('!!!')
+help(test)
+print(test.__doc__)
