@@ -77,3 +77,7 @@
 - `*args`: all remaining positional arguments, where `args` is a tuple
 - `**kwargs`: all keyword arguments, where `kwargs` is a dictionary
 - function parameters order: positional params, *args, default parameters, **kwargs
+
+### Walrus Operator
+
+- `:=` can assigns values to variables as part of a larger expression

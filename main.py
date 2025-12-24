@@ -1,11 +1,9 @@
-def highest_even(li):
-  # do not hint me
-  highest_even = 0
-  for item in li:
-    if item % 2 == 0:
-      highest_even = item if item > highest_even else highest_even
-    else:
-      continue
-  return highest_even
+a = 'hellloooooooo'
 
-print(highest_even([10,2,3,4,8,11]))
+if (n := len(a)) > 10:
+  print(f"too long {n} elements")
+
+while (n := len(a)) > 1:
+  print(n)
+  a = a[:-1]
+
