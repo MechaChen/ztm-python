@@ -1,9 +1,7 @@
-a = 'hellloooooooo'
+if True:
+  x = 10
 
-if (n := len(a)) > 10:
-  print(f"too long {n} elements")
+def some_func():
+  total = 100
 
-while (n := len(a)) > 1:
-  print(n)
-  a = a[:-1]
-
+print(x)

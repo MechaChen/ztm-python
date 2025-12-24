@@ -81,3 +81,9 @@
 ### Walrus Operator
 
 - `:=` can assigns values to variables as part of a larger expression
+
+
+### Scope
+
+- Scope: what variables do I have access to?
+- Python has functional scope
