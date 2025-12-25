@@ -87,3 +87,12 @@
 
 - Scope: what variables do I have access to?
 - Python has functional scope
+
+
+### Scope Rules
+
+Scope priorities
+- 1 - start with local scope
+- 2 - then parent local scope
+- 3 - then global scope
+- 4 - then built-in python functions
