@@ -96,3 +96,8 @@ Scope priorities
 - 2 - then parent local scope
 - 3 - then global scope
 - 4 - then built-in python functions
+
+
+### global Keyword
+
+- If we want to modify `global` variable, we need to declare `global <variable>` inside the function
