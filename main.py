@@ -1,8 +1,11 @@
-total = 0
+def outer():
+  x = 'local'
+  def inner():
+    nonlocal x
+    x = 'nonlocal'
+    print('inner:', x)
 
-def count():
-  global total
-  total += 1
-  return total
+  inner()
+  print('outer:', x)
 
-print(count())
+outer()

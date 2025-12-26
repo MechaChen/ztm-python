@@ -101,3 +101,9 @@ Scope priorities
 ### global Keyword
 
 - If we want to modify `global` variable, we need to declare `global <variable>` inside the function
+
+
+### `nonlocal` Keyword
+
+- If we want to modify variable outside local scope, and within a function scope, 
+we need to declare `nonlocal <variable>`
