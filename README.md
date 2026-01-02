@@ -107,3 +107,23 @@ Scope priorities
 
 - If we want to modify variable outside local scope, and within a function scope, 
 we need to declare `nonlocal <variable>`
+
+
+## Developer Environment
+
+### Python Developer Tools
+
+- Code Editors: light weight, only have simple functions like linting and autocomplete (e.g. VS Code, Subline Text)
+- IDEs: full-featured development tools with built-in debugging, profiling, refactoring ...etc, (e.g., PyCharm, IntelliJ IDEA)
+
+### Optional: Terminal Commands
+
+- `pwd`: print working directory: shows the current directory you are in
+- `ls`: list
+- `cd`: change directory
+  - `cd /`: change to root directory
+  - `cd ~`: change to user directory
+- `open .`: open current folder we are in
+- `mv index.html about.html`: rename `index.html` to `about.html`
+- `rm`: remove a file
+- `rm -r`: remove recursively, deletes directories and all their contents (files and subdirectories)
