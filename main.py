@@ -1,15 +1,22 @@
 # OOP
+class PlayerCharacter:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
 
-class BigObject:
-  pass
+  def run(self):
+    print('run')
+    return 'done'
 
-obj1 = BigObject() # () is to instanciate the class
 
-print(type(None))
-print(type(True))
-print(type(5))
-print(type(5.5))
-print(type('hello'))
-print(type([]))
-print(type({}))
-print(type(obj1))
+player1 = PlayerCharacter('Benson', 32)
+player2 = PlayerCharacter('Claire', 38)
+
+print(player1.name)
+print(player2.age)
+
+print(player1)
+print(player2)
+
+print(player1.run())
+print(player1.run)
