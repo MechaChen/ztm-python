@@ -139,5 +139,9 @@ we need to declare `nonlocal <variable>`
 
 ### Encapsulation
 
-- 4 pillars of OOP: `Encapsulation`, `Abstraction`, `Inheritance`, `Polymorphism`
+- 4 pillars of OOP: `Encapsulation`, `Abstraction`, `Inheritance`, `Polymorphism` (A PIE)
 - `Encapsulation`: make data private, and are only allowed to be accessed by the methods under the same object
+
+### Abstraction
+
+- `Abstraction`: hide complex implementation details and only exposes necessary interfaces, making objects easy to use without knowing internal complexity
