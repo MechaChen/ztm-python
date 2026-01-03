@@ -135,3 +135,9 @@ we need to declare `nonlocal <variable>`
 
 - `@classmethod`: a method belong to `class` and all instanciated objects, and 1st parameter is class itself, rest parameters are passed by users
 - `@staticmethod`: a method belong to `class` and all instanciated objects, and no class as parameter, all parameters are passed by users
+
+
+### Encapsulation
+
+- 4 pillars of OOP: `Encapsulation`, `Abstraction`, `Inheritance`, `Polymorphism`
+- `Encapsulation`: make data private, and are only allowed to be accessed by the methods under the same object
