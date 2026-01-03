@@ -1,26 +1,18 @@
-# Given the below class:
-class Cat:
-  species = 'mammal'
-  def __init__(self, name, age):
+# class method & static method
+class PlayerCharacter:
+  def __init__(self, name = 'anonymous', age = 0):
+    if age > 18:
       self.name = name
       self.age = age
 
+  @classmethod
+  def adding_things(cls, num1, num2):
+    return cls('Teddy', num1 + num2)
 
-# 1 Instantiate the Cat object with 3 cats
-cat1 = Cat('Benson', 32)
-cat2 = Cat('Claire', 38)
-cat3 = Cat('Bennet', 34)
+  @staticmethod
+  def adding_things2(num1, num2):
+    return num1 + num2
 
-
-# 2 Create a function that finds the oldest cat
-def get_oldest_cat(*cats):
-  oldest_cat = cats[0]
-  for cat in cats:
-    if cat.age > oldest_cat.age:
-      oldest_cat = cat
-  return oldest_cat
-
-# 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
-
-oldest_cat = get_oldest_cat(cat1, cat2, cat3)
-print(f"The oldest cat is {oldest_cat.name} and is {oldest_cat.age} years old.")
+player1 = PlayerCharacter.adding_things(13,14)
+print(player1.name, player1.age)
+print(PlayerCharacter.adding_things2(5,6))

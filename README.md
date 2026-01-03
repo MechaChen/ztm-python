@@ -127,3 +127,11 @@ we need to declare `nonlocal <variable>`
 - `mv index.html about.html`: rename `index.html` to `about.html`
 - `rm`: remove a file
 - `rm -r`: remove recursively, deletes directories and all their contents (files and subdirectories)
+
+
+## Advanced Python: Object Oriented Programming
+
+### @classmethod & @staticmethod
+
+- `@classmethod`: a method belong to `class` and all instanciated objects, and 1st parameter is class itself, rest parameters are passed by users
+- `@staticmethod`: a method belong to `class` and all instanciated objects, and no class as parameter, all parameters are passed by users
