@@ -1,11 +1,25 @@
-class PlayerCharacter:
-  def __init__(self, name, age):
-    if age > 18:
-      self._name = name
-      self._age = age
+class User():
+  def sign_in(self):
+    print('logged in')
 
-  def speak(self):
-    print(f'my name is {self._name} and I am {self._age} years old')
+class Wizard(User):
+  def __init__(self, name, power):
+    self.name = name
+    self.power = power
 
-player1 = PlayerCharacter('Benson', 32)
-player1.speak()
+  def attack(self):
+    print(f'attacking with power of {self.power}')
+
+class Archer(User):
+  def __init__(self, name, num_arrows):
+    self.name = name
+    self.num_arrows = num_arrows
+
+  def attack(self):
+    print(f'attacking with arrows: arrows left - {self.num_arrows}')
+
+wizard1 = Wizard('Claire', 50)
+archer1 = Archer('Benson', 100)
+
+wizard1.attack()
+archer1.attack()
