@@ -156,3 +156,5 @@ we need to declare `nonlocal <variable>`
 ### Inheritance
 
 - Add `(<Parent Class>)` after class name to inherit parent class, sharing the parent attributes & methods
+- We can use `isinstance(<instance>, <class>)` to distinguish if an object is a instance of the class
+- `object` is the foundation class of all object

@@ -19,7 +19,10 @@ class Archer(User):
     print(f'attacking with arrows: arrows left - {self.num_arrows}')
 
 wizard1 = Wizard('Claire', 50)
-archer1 = Archer('Benson', 100)
+print(isinstance(wizard1, Wizard))
+print(isinstance(wizard1, User))
+print(isinstance(wizard1, Archer))
+print(isinstance(wizard1, object))
 
-wizard1.attack()
-archer1.attack()
+[].__repr__()
+wizard1.__repr__()
