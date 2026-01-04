@@ -145,3 +145,9 @@ we need to declare `nonlocal <variable>`
 ### Abstraction
 
 - `Abstraction`: hide complex implementation details and only exposes necessary interfaces, making objects easy to use without knowing internal complexity
+
+### Private vs Public Variables
+
+- Python cannot make class attributes or methods private
+- We can add `_` before attributes or methods name to tell others that the variables should be private
+- Dunder `__` attributes or methods are built-in and should not mofidy them
