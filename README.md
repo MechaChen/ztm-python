@@ -158,3 +158,10 @@ we need to declare `nonlocal <variable>`
 - Add `(<Parent Class>)` after class name to inherit parent class, sharing the parent attributes & methods
 - We can use `isinstance(<instance>, <class>)` to distinguish if an object is a instance of the class
 - `object` is the foundation class of all object
+
+
+### Polymorphism
+
+- **Polymorphism**: **Poly** means 'many', **morphism** means 'form', so **Polymorphism** means many forms
+- different objects can have method with the same name with different implementations
+- we can use Polymorphism to follow DRY principle to iterative looping same method name of different objects
