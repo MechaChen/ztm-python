@@ -1,58 +1,40 @@
-class Pets:
-    animals = []
-
-    def __init__(self, animals):
-        self.animals = animals
-
-    def walk(self):
-        for animal in self.animals:
-            print(animal.walk())
-
-
-class Cat:
-    is_lazy = True
-
-    def __init__(self, name, age):
+class User:
+    def __init__(self, name, email, age):
         self.name = name
         self.age = age
+        self.email = email
 
-    def walk(self):
-        return f"{self.name} is just walking around"
+    def sign_in(self):
+        print("logged in")
 
-
-class BritishShorthair(Cat):
-    def sing(self, sounds):
-        return f"{sounds}"
-
-    def walk(self):
-        return f"{self.name} is walking with meowing"
+    def attack(self):
+        print("do nothing")
 
 
-class ScottishFold(Cat):
-    def sing(self, sounds):
-        return f"{sounds}"
+class Wizard(User):
+    def __init__(self, name, email, age, power):
+        super().__init__(name, email, age)
+        self.power = power
 
-    def walk(self):
-        return f"{self.name} is walking cutely"
-
-
-# 1 Add nother Cat
-class Ragdoll(Cat):
-    def sing(self, sounds):
-        return f"{sounds}"
-
-    def walk(self):
-        return f"{self.name} is walking gracefully"
+    def attack(self):
+        User.attack(
+            self
+        )  # if we want to have both parent & child behavior, we can call parent method inside child method
+        print(f"attacking with power of {self.power}")
 
 
-# 2 Create a list of all of the pets (create 3 cat instances from the above)
-british_shorthair = BritishShorthair("British Shorthair", 3)
-scottish_fold = ScottishFold("Scottish Fold", 2)
-ragdoll = Ragdoll("Ragdoll", 4)
-my_cats = [british_shorthair, scottish_fold, ragdoll]
+class Archer(User):
+    def __init__(self, name, age, email, num_arrows):
+        self.name = name
+        self.age = age
+        self.num_arrows = num_arrows
 
-# 3 Instantiate the Pet class with all your cats use variable my_pets
-my_pets = Pets(my_cats)
+    def attack(self):
+        print(f"attacking with arrows: arrows left - {self.num_arrows}")
 
-# 4 Output all of the cats walking using the my_pets instance
-my_pets.walk()
+
+wizard1 = Wizard("Claire", "chillymood@gmail.com", 38, 100)
+archer1 = Archer("Benson", "tumlivein@gmail.com", 32, 10)
+
+print(wizard1.email)
+print(archer1.email)

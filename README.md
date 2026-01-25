@@ -165,3 +165,8 @@ we need to declare `nonlocal <variable>`
 - **Polymorphism**: **Poly** means 'many', **morphism** means 'form', so **Polymorphism** means many forms
 - different objects can have method with the same name with different implementations
 - we can use Polymorphism to follow DRY principle to iterative looping same method name of different objects
+
+## `super()`
+
+- Python's `super()` returns a proxy object that lets us call parent class methods
+- If we want to execute the parent class's method with the same name, we can use `super().<method>()`, ex: `super().__init__(...)`
