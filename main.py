@@ -36,5 +36,5 @@ class Archer(User):
 wizard1 = Wizard("Claire", "chillymood@gmail.com", 38, 100)
 archer1 = Archer("Benson", "tumlivein@gmail.com", 32, 10)
 
-print(wizard1.email)
-print(archer1.email)
+print(dir(wizard1))
+print(dir(archer1))
