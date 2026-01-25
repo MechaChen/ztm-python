@@ -1,37 +1,58 @@
-class User():
-  def sign_in(self):
-    print('logged in')
+class Pets:
+    animals = []
 
-  def attack(self):
-    print('do nothing')
+    def __init__(self, animals):
+        self.animals = animals
 
-class Wizard(User):
-  def __init__(self, name, power):
-    self.name = name
-    self.power = power
+    def walk(self):
+        for animal in self.animals:
+            print(animal.walk())
 
-  def attack(self):
-    User.attack(self) # if we want to have both parent & child behavior, we can call parent method inside child method
-    print(f'attacking with power of {self.power}')
 
-class Archer(User):
-  def __init__(self, name, num_arrows):
-    self.name = name
-    self.num_arrows = num_arrows
+class Cat:
+    is_lazy = True
 
-  def attack(self):
-    print(f'attacking with arrows: arrows left - {self.num_arrows}')
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-wizard1 = Wizard('Claire', 38)
-wizard2 = Wizard('Bennet', 35)
-archer1 = Archer('Benson', 32)
-archer2 = Archer('Dean', 36)
+    def walk(self):
+        return f"{self.name} is just walking around"
 
-def player_attack(character):
-  character.attack()
 
-player_attack(wizard1)
-player_attack(archer1)
+class BritishShorthair(Cat):
+    def sing(self, sounds):
+        return f"{sounds}"
 
-for char in [wizard1, wizard2, archer1, archer2]:
-  char.attack()
+    def walk(self):
+        return f"{self.name} is walking with meowing"
+
+
+class ScottishFold(Cat):
+    def sing(self, sounds):
+        return f"{sounds}"
+
+    def walk(self):
+        return f"{self.name} is walking cutely"
+
+
+# 1 Add nother Cat
+class Ragdoll(Cat):
+    def sing(self, sounds):
+        return f"{sounds}"
+
+    def walk(self):
+        return f"{self.name} is walking gracefully"
+
+
+# 2 Create a list of all of the pets (create 3 cat instances from the above)
+british_shorthair = BritishShorthair("British Shorthair", 3)
+scottish_fold = ScottishFold("Scottish Fold", 2)
+ragdoll = Ragdoll("Ragdoll", 4)
+my_cats = [british_shorthair, scottish_fold, ragdoll]
+
+# 3 Instantiate the Pet class with all your cats use variable my_pets
+my_pets = Pets(my_cats)
+
+# 4 Output all of the cats walking using the my_pets instance
+my_pets.walk()
