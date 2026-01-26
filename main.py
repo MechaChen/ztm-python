@@ -1,26 +1,11 @@
-class Cat:
-    def __init__(self, name, age, color):
-        self.color = color
-        self.my_dict = {"name": "mi", "age": age}
-
-    def __str__(self):
-        return f"Fur color is {self.color}"
-
+class SuperList(list):
     def __len__(self):
-        return 13
-
-    def __call__(self):
-        return "meow~~"
-
-    def __getitem__(self, index):
-        return self.my_dict[index]
+        return 1000
 
 
-scottish_fold = Cat("Scottish Fold", 5, "grey")
-print(scottish_fold)
-print(str(scottish_fold))
-print(scottish_fold.__str__())
-print(str("Hello"))
-print(scottish_fold())
-print(len(scottish_fold))
-print(scottish_fold["name"])
+super_list1 = SuperList([0, 1, 2, 3, 4])
+print(len(super_list1))
+super_list1.append(5)
+print(super_list1[5])
+print(issubclass(SuperList, list))
+print(issubclass(list, object))

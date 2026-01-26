@@ -176,3 +176,8 @@ we need to declare `nonlocal <variable>`
 
 - introspection: the ability to check objects' own attribute and methods
 - using `dir(<object>)` to check
+
+
+### Exercise: Extending List
+
+- `issubclass`: a function to detect if 1st arguments is the subclass of 2nd argument
