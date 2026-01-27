@@ -178,6 +178,12 @@ we need to declare `nonlocal <variable>`
 - using `dir(<object>)` to check
 
 
+
 ### Exercise: Extending List
 
 - `issubclass`: a function to detect if 1st arguments is the subclass of 2nd argument
+
+
+### Multiple Inheritance
+
+- Python Multiple inheritance: the 1st inherit parent class will dominate, like `__init__()` and `<same_method_name>()`
