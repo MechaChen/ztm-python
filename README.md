@@ -187,3 +187,8 @@ we need to declare `nonlocal <variable>`
 ### Multiple Inheritance
 
 - Python Multiple inheritance: the 1st inherit parent class will dominate, like `__init__()` and `<same_method_name>()`
+
+
+### MRO - Method Resolution Order
+
+- Python class will find most close class method, attribute as final class method, attribute
